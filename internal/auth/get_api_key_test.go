@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestGetAPIKey(t *testing.T){
+func TestGetAPIKey(t *testing.T) {
 	// 1. Set up fake HTTP headers
 	headers := http.Header{}
 	headers.Set("Authorization", "ApiKey my-secret-key")
@@ -14,10 +14,10 @@ func TestGetAPIKey(t *testing.T){
 	key, err := GetAPIKey(headers)
 
 	// 3 check the result
-	if err != nil{
+	if err != nil {
 		t.Errorf("expected no error, got: %v", err)
 	}
-	if key!= "my-secret-key"{
+	if key != "my-secret-key" {
 		t.Errorf("expected 'my-secret-key', got: %q", key)
 	}
 }
