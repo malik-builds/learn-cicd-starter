@@ -1,4 +1,4 @@
-https://github.com/malik-builds/learn-cicd-starter/actions/workflows/ci.yml/badge.svg
+![test status](https://github.com/malik-builds/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 # learn-cicd-starter (Notely)
 
